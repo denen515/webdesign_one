@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background: aqua;
+    font-size: 130%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* .container{
+    background: #fff;
+} */
+
+.phone_dialler{
+    box-shadow: 0 0 25px 0;
+    width: 18.4rem;
+}
+
+.container{
+    background: #fff;
+}
+
+.dialler_display{
+    width: 100%;
+    transform: translateX(-2.55%);
+    text-align: center;
+    padding: 0 1rem;
+    padding-top: 3rem;
+    padding-bottom: .2rem;
+    border-radius: .3rem;
+    overflow: hidden;
+    font-size: calc(1.2rem* 1.2);
+    /* background: pink; */
+}
+
+.dialler_keys button[class="plus"]{
+    padding-top: 0px;
+    font-size: 90%;
+}
+
+.dialler_keys button[class="zero"]{
+    padding-bottom: 0px;
+}
+
+
+.dialler_keys button{
+    display: flex;
+    height: 60px;
+    width: 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem .9rem;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    font-size: 130%;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.dialler_keys button span{
+    font-size: 30%;
+}
+
+.dialler_keys button span[id="plus"]{
+    font-size: 50%;
+}
+
+
+.dialler_keys button[class="zero"]{
+    padding-bottom: 0px;
+}
+
+.dialler_keys{
+    /* background: yellow; */
+    margin-top: 40px;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: repeat(3, auto);
+    padding: 0 3rem;
+    grid-template-areas: 
+    "one two three"
+    "four five six"
+    "seven eight nine"
+    "times zero hash"
+    ". plus .";
+}
+
+.one{
+    grid-area: one;
+}
+
+.two{
+    grid-area: two;
+}
+
+
+.three{
+    grid-area: three;
+}
+
+.four{
+    grid-area: four;
+}
+
+.five{
+    grid-area: five;
+}
+
+.six{
+    grid-area: six;
+}
+
+.seven{
+    grid-area: seven;
+}
+
+.eight{
+    grid-area: eight;
+}
+
+.nine{
+    grid-area: nine;
+}
+
+.zero{
+    grid-area: zero;
+}
+
+.hash{
+    grid-area: hash;
+}
+
+.plus{
+    grid-area: plus;
+}
+
+.times{
+    grid-area:times;
+}
+
+
+
+.call_buttons{
+    display: flex;
+    margin-top: 20px;
+    /* background: pink; */
+    justify-content: center;
+    align-items: center;
+}
+
+.call_buttons button{
+    cursor: pointer;
+    padding: .4rem 1.2rem;
+    outline: none;
+    border: .2px solid;
+    background: rgb(68, 185, 68);
+    transform: translateX(-18%);
+}
+
+.call_buttons button .fa{
+    color: #fff;
+}
+
+.call_buttons button[class="btn1"]{
+    border-top-left-radius: .7rem;
+    border-bottom-left-radius: .7rem;  
+}
+
+.call_buttons button[class="btn2"]{
+    border-top-right-radius: .7rem;
+    border-bottom-right-radius: .7rem;
+}
+
+.dialler_foot{
+    margin-top: 1.2rem;
+    padding-bottom: .4rem;
+    font-size: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dialler_keys button:hover, 
+.dialler_keys button:active{
+    background: rgba(128, 128, 128, 0.349);
+    font-size: 110%;
+}
+
+.call_buttons button:hover{
+    background: rgb(86, 160, 86);
+}
